@@ -1,0 +1,32 @@
+th, td {
+border: 5px solid  white;
+text-align: center;
+}
+table {
+width: 90%;
+margin: auto;
+}
+
+*{
+font-size: 32px;
+padding: 10px;
+background-color: lavender;
+}
+
+.destaque {
+background-color: whitesmoke;
+}
+
+
+td.video {
+text-align: center;
+width: 350px;
+}
+
+td.fonte {
+width: 200px;
+}
+
+input, button {
+    background-color: whitesmoke;
+}

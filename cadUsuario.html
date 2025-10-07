@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro de usuário</title>
+<link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+<h1 class="destaque">Formulário de cadastro de usuário</h1>
+<form id="formCadUsuario">
+<div id="divMensagem" role="alert" aria-live="assertive"></div>
+
+<div>
+<label form="txtNome">
+* Nome completo:
+</label>
+<input type="text" id="txtNome" />
+</div>
+
+<div>
+<label form="txtEmail">
+* E-mail:
+</label>
+<input type="email" id="txtEmail" />
+</div>
+
+<div>
+<label for="txtSenha">
+* Senha:
+</label>
+<input type="password" id="txtSenha" />
+</div>
+
+<div>
+<label for="txtConfSenha">
+* Confirmar senha:
+</label>
+<input type="password" id="txtConfSenha" />
+</div>
+<div>
+<label for="txtTelefone">* Telefone</label>
+<input type="tel" id="txtTelefone" required/>
+</div>
+
+<div>
+<label for="txtNascimento">
+* Data de Nascimento 
+</label>
+<input type="date" id="txtNascimento" required/>
+</div>
+<div>
+<fieldset>
+<legend>* Tipo de usuário</legend>
+<input type="radio" id="rdAdmin" name="rdTipoUsuario" value="admin"/>
+<label for="rdAdmin">Administrador</label>
+<br>
+<input type="radio" id="rdComun" name="rdTipoUsuario" value="comun"/>
+<label for="rdComun">usuário Comum</label>
+</fieldset>
+</div>
+
+<div>
+<fieldset>
+<legend>* Preferências: </legend>
+<input type="checkbox" id="ckEmail" name="ckPreferencias" value="email"/>
+<label for="ckEmail">Receber novidades por email. </label>
+<br>
+<input type="checkbox" id="ckSMS" name="ckPreferencias" value="sms"/>
+<label for="ckSMS">Receber novidades por SMS. </label>
+</fieldset>
+</div>
+
+<div>
+<label for="txtEstudo">* Anos de Estudo</label>
+<input type="number" id="txtEstudo" min="0" max="100" />
+</div>
+
+<div>
+<label for="slGenero ">* Gênero:</label>
+<select form="slGenero">
+<option value="">Selecione...</option>
+<option value="F">Femenino</option>
+<option value="M">Masculino</option>
+<option value="N">Prefiro não informar.</option>
+</select>
+</div>
+
+<div>
+<label for="flFoto">* Foto de Perfil</label>
+<input type="file" id="flFoto">
+</div>
+
+<div>
+<label for="txtObs">* Observação:</label>
+<textarea id="txtObs" rows="4" cols="40"></textarea>
+</div>
+<br>
+
+<div>
+<button type="submit" id="btnSubmit">Cadastrar</button>
+</div>
+</form>
+
+<br>
+<a href="gestaodeUsuarios.html">voltar</a>    
+</body>
+<script type="module" src="dist/cadUsuario.js"></script>
+</html>
